@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aprenda a criar uma estrutura simples para atrair clientes, vender diretamente pelo WhatsApp e fazer eles comprarem novamente sem depender exclusivamente do iFood." />
+  <title>Venda Todo Dia Sem Virar Refém do iFood — Daniel Junior</title>
+
+  <!-- Google Fonts: Archivo (Display Editorial Pesada), Plus Jakarta Sans (Corpo), JetBrains Mono (Detalhes) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=JetBrains+Mono:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet Principal -->
+  <link rel="stylesheet" href="css/styles.css?v=13" />
+</head>
+<body>
+
+  <main id="lp-content">
+    <!-- =======================================================================
+         SEÇÃO 01: HERO (ALTA CONVERSÃO — PRODUTO LOW TICKET)
+         Hierarquia Direta: Headline -> Subheadline -> CTA -> Microinformação
+         ======================================================================= -->
+    <section id="hero" class="hero-section" aria-labelledby="hero-title">
+      <!-- Imagem de suporte visual ocupando a metade direita da Hero -->
+      <div class="hero-bg-media" aria-hidden="true">
+        <img
+          src="assets/images/hero-bg-full.jpg?v=3"
+          alt="Confeiteira recebendo pedidos no WhatsApp com bolo artesanal de chocolate com morangos na bancada"
+          class="hero-bg-media__img"
+          width="2048"
+          height="1152"
+          fetchpriority="high"
+        />
+        <div class="hero-bg-media__overlay"></div>
+      </div>
+
+      <!-- Grid discreto de fundo editorial -->
+      <div class="editorial-bg-grid" aria-hidden="true"></div>
+
+      <!-- Container (Copy 45% à esquerda no Desktop | Centralizado no Mobile) -->
+      <div class="container hero-single-col">
+        <div class="hero-content">
+          <!-- 1. Headline Principal (~5 linhas no desktop) -->
+          <h1 id="hero-title" class="hero-headline">
+            <span class="hero-headline__line">Pare de <span class="hero-headline__highlight">pagar</span></span>
+            <span class="hero-headline__line"><span class="hero-headline__highlight">comissão</span> por</span>
+            <span class="hero-headline__line">clientes que</span>
+            <span class="hero-headline__line">poderiam <span class="hero-headline__highlight">comprar</span></span>
+            <span class="hero-headline__line"><span class="hero-headline__highlight">direto</span> de você.</span>
+          </h1>
+
+          <!-- 3. Subheadline -->
+          <p class="hero-subheadline">
+            Aprenda a criar uma estrutura simples para atrair clientes, <strong>vender diretamente pelo WhatsApp</strong> e fazer eles comprarem novamente <strong>sem depender exclusivamente do iFood</strong>.
+          </p>
+
+          <!-- 4. CTA & 5. Microinformação -->
+          <div class="hero-cta-group">
+            <a href="#oferta" class="btn-hero-cta" role="button">
+              <span>QUERO VENDER MAIS DIRETO</span>
+              <span class="btn-hero-cta__arrow" aria-hidden="true">→</span>
+            </a>
+
+            <p class="hero-micro-note">
+              Acesso imediato <span aria-hidden="true">•</span> Pagamento único
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SEÇÃO 02: O PROBLEMA FINANCEIRO (DEPENDÊNCIA DO MARKETPLACE)
+         ======================================================================= -->
+    <section id="problema" class="problem-section" aria-labelledby="problem-title">
+      <div class="container problem-grid">
+
+        <!-- LADO ESQUERDO: INDICADOR, TÍTULO, TEXTO EXPLICATIVO E FRASE DE IMPACTO -->
+        <div class="problem-copy">
+          <div class="problem-kicker">
+            <span class="problem-kicker__square" aria-hidden="true"></span>
+            <span>O PROBLEMA</span>
+          </div>
+
+          <h2 id="problem-title" class="problem-title">
+            Você vende. Mas quanto realmente <span class="problem-title__highlight">sobra</span>?
+          </h2>
+
+          <div class="problem-body">
+            <p>
+              Você coloca ingredientes, prepara o pedido, embala, entrega e ainda paga comissão para conseguir aquela venda.
+            </p>
+            <p>
+              No final, o valor que entrou no caixa pode ser bem diferente do que realmente sobra para você.
+            </p>
+          </div>
+
+          <blockquote class="problem-impact-quote">
+            “Seu faturamento pode parecer bom. Sua margem pode contar outra história.”
+          </blockquote>
+        </div>
+
+        <!-- LADO DIREITO: CARD FINANCEIRO COM EXEMPLO REAL DE UM PEDIDO -->
+        <div class="problem-card-wrapper">
+          <div class="financial-card" role="region" aria-label="Exemplo financeiro de um pedido">
+
+            <!-- Linha 1: Pedido Bruto -->
+            <div class="financial-row financial-row--gross">
+              <div class="financial-row__label-group">
+                <span class="financial-row__icon" aria-hidden="true">
+                  <!-- Ícone minimalista: Pedido -->
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4H6z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M3 6h18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M16 10a4 4 0 0 1-8 0" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                <span class="financial-row__label">PEDIDO</span>
+              </div>
+              <span class="financial-row__value financial-row__value--gross">R$ 80,00</span>
+            </div>
+
+            <!-- Lista de Descontos / Taxas -->
+            <div class="financial-deductions">
+              <!-- Taxa do iFood (27%) -->
+              <div class="financial-row financial-row--negative">
+                <div class="financial-row__label-group">
+                  <span class="financial-row__icon financial-row__icon--red" aria-hidden="true">
+                    <!-- Ícone minimalista: Comissão (%) -->
+                    <svg viewBox="0 0 24 24" fill="none">
+                      <line x1="19" y1="5" x2="5" y2="19" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                      <circle cx="6.5" cy="6.5" r="2.5" stroke="currentColor" stroke-width="1.8"/>
+                      <circle cx="17.5" cy="17.5" r="2.5" stroke="currentColor" stroke-width="1.8"/>
+                    </svg>
+                  </span>
+                  <span class="financial-row__label">TAXA DO IFOOD</span>
+                </div>
+                <span class="financial-row__value financial-row__value--negative">− R$ 21,60</span>
+              </div>
+
+              <!-- Embalagem Especial -->
+              <div class="financial-row financial-row--negative">
+                <div class="financial-row__label-group">
+                  <span class="financial-row__icon financial-row__icon--red" aria-hidden="true">
+                    <!-- Ícone minimalista: Embalagem -->
+                    <svg viewBox="0 0 24 24" fill="none">
+                      <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                      <polyline points="3.27 6.96 12 12.01 20.73 6.96" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                      <line x1="12" y1="22.08" x2="12" y2="12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                  <span class="financial-row__label">EMBALAGEM ESPECIAL</span>
+                </div>
+                <span class="financial-row__value financial-row__value--negative">− R$ 5,00</span>
+              </div>
+
+              <!-- Entrega Subsidiada -->
+              <div class="financial-row financial-row--negative">
+                <div class="financial-row__label-group">
+                  <span class="financial-row__icon financial-row__icon--red" aria-hidden="true">
+                    <!-- Ícone minimalista: Entrega -->
+                    <svg viewBox="0 0 24 24" fill="none">
+                      <rect x="1" y="3" width="15" height="13" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                      <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                      <circle cx="5.5" cy="18.5" r="2.5" stroke="currentColor" stroke-width="1.8"/>
+                      <circle cx="18.5" cy="18.5" r="2.5" stroke="currentColor" stroke-width="1.8"/>
+                    </svg>
+                  </span>
+                  <span class="financial-row__label">ENTREGA SUBSIDIADA</span>
+                </div>
+                <span class="financial-row__value financial-row__value--negative">− R$ 3,00</span>
+              </div>
+            </div>
+
+            <!-- Área Final de Destaque: Sobra Após Taxa e Extras -->
+            <div class="financial-summary">
+              <div class="financial-summary__header">
+                <span class="financial-summary__label">SOBRA APÓS TAXA E EXTRAS</span>
+                <span class="financial-summary__amount">R$ 50,40</span>
+              </div>
+              <p class="financial-summary__footnote">
+                E ainda faltam os ingredientes e o seu tempo.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SEÇÃO 03: A SOLUÇÃO (ESTRUTURA CENTRALIZADA COMPACTA — 5 ETAPAS)
+         ======================================================================= -->
+    <section id="solucao" class="solution-section" aria-labelledby="solution-title">
+      <div class="container solution-container">
+
+        <!-- 1. Pequeno Indicador -->
+        <div class="solution-kicker">
+          <span class="solution-kicker__dot" aria-hidden="true"></span>
+          <span>A SOLUÇÃO</span>
+        </div>
+
+        <!-- 2. Título (2 Linhas no Desktop) -->
+        <h2 id="solution-title" class="solution-title">
+          <span class="solution-title__line">Você não precisa abandonar o iFood.</span>
+          <span class="solution-title__line">Precisa <span class="solution-title__highlight">parar de depender dele</span>.</span>
+        </h2>
+
+        <!-- 3. Texto -->
+        <p class="solution-description">
+          Crie um caminho próprio para atrair pessoas da sua região, levar esses clientes para o WhatsApp, vender diretamente e transformar compradores em clientes que voltam.
+        </p>
+
+        <!-- 4. Cinco Cards Horizontais Conectados -->
+        <ol class="solution-flow" aria-label="Fluxo da estrutura própria de vendas em 5 etapas">
+
+          <!-- 01 — INSTAGRAM -->
+          <li class="solution-step">
+            <div class="solution-card">
+              <div class="solution-card__header">
+                <span class="solution-card__number">01</span>
+                <span class="solution-card__icon" aria-hidden="true">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                    <rect x="2.5" y="2.5" width="19" height="19" rx="5" stroke="currentColor" stroke-width="1.9"/>
+                    <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.9"/>
+                    <circle cx="17.5" cy="6.5" r="1.1" fill="currentColor"/>
+                  </svg>
+                </span>
+              </div>
+              <h3 class="solution-card__title">Instagram</h3>
+              <p class="solution-card__text">Mostre seus produtos e deixe claro como pedir.</p>
+            </div>
+            <div class="solution-connector" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 20 20" fill="none">
+                <path d="M3 10h13M12 6l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </li>
+
+          <!-- 02 — ANÚNCIO LOCAL -->
+          <li class="solution-step">
+            <div class="solution-card">
+              <div class="solution-card__header">
+                <span class="solution-card__number">02</span>
+                <span class="solution-card__icon" aria-hidden="true">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                    <path d="M3 10.5v3a1.5 1.5 0 0 0 1.5 1.5h2.2l6.8 4V5L6.7 9H4.5A1.5 1.5 0 0 0 3 10.5z" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6.5 15l1.2 4.2a1.2 1.2 0 0 0 2.3-.6L9 15" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M17.5 8.5a4.5 4.5 0 0 1 0 7" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/>
+                  </svg>
+                </span>
+              </div>
+              <h3 class="solution-card__title">Anúncio local</h3>
+              <p class="solution-card__text">Alcance pessoas que moram perto de você.</p>
+            </div>
+            <div class="solution-connector" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 20 20" fill="none">
+                <path d="M3 10h13M12 6l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </li>
+
+          <!-- 03 — WHATSAPP -->
+          <li class="solution-step">
+            <div class="solution-card">
+              <div class="solution-card__header">
+                <span class="solution-card__number">03</span>
+                <span class="solution-card__icon" aria-hidden="true">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </div>
+              <h3 class="solution-card__title">WhatsApp</h3>
+              <p class="solution-card__text">Receba o pedido e conduza o atendimento.</p>
+            </div>
+            <div class="solution-connector" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 20 20" fill="none">
+                <path d="M3 10h13M12 6l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </li>
+
+          <!-- 04 — VENDA DIRETA -->
+          <li class="solution-step">
+            <div class="solution-card">
+              <div class="solution-card__header">
+                <span class="solution-card__number">04</span>
+                <span class="solution-card__icon" aria-hidden="true">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4H6z" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M3 6h18" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M16 10a4 4 0 0 1-8 0" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </div>
+              <h3 class="solution-card__title">Venda direta</h3>
+              <p class="solution-card__text">Venda sem a comissão do marketplace.</p>
+            </div>
+            <div class="solution-connector" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 20 20" fill="none">
+                <path d="M3 10h13M12 6l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </li>
+
+          <!-- 05 — RECOMPRA -->
+          <li class="solution-step">
+            <div class="solution-card">
+              <div class="solution-card__header">
+                <span class="solution-card__number">05</span>
+                <span class="solution-card__icon" aria-hidden="true">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                    <polyline points="17 1 21 5 17 9" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M3 11V9a4 4 0 0 1 4-4h14" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+                    <polyline points="7 23 3 19 7 15" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M21 13v2a4 4 0 0 1-4 4H3" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </div>
+              <h3 class="solution-card__title">Recompra</h3>
+              <p class="solution-card__text">Mantenha contato e faça o cliente voltar.</p>
+            </div>
+          </li>
+
+        </ol>
+
+        <!-- 5. Frase Final -->
+        <p class="solution-closing">
+          Você começa atraindo. <span class="solution-closing__highlight">Vende pelo seu canal.</span> E constrói uma base de clientes que pode comprar novamente.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SEÇÃO 04: POR DENTRO DO GUIA (5 MÓDULOS + PLANO DE 30 DIAS + MOCKUP)
+         ======================================================================= -->
+    <section id="conteudo" class="modules-section" aria-labelledby="modules-title">
+      <div class="container modules-container">
+
+        <!-- Indicador -->
+        <div class="modules-kicker">
+          <span class="modules-kicker__dot" aria-hidden="true"></span>
+          <span>POR DENTRO DO GUIA</span>
+        </div>
+
+        <!-- Título (aproximadamente 2 linhas no desktop) -->
+        <h2 id="modules-title" class="modules-title">
+          Tudo que você precisa para colocar sua <span class="modules-title__highlight">estrutura de vendas</span> em prática.
+        </h2>
+
+        <!-- Subtítulo -->
+        <p class="modules-subtitle">
+          Um passo a passo direto ao ponto para atrair clientes, vender pelo WhatsApp e criar uma base de clientes que volta a comprar.
+        </p>
+
+        <!-- Grid de 5 Módulos + Mockup 3D de Apoio Visual (3 colunas equilibradas) -->
+        <div class="modules-grid">
+
+          <!-- MÓDULO 01 -->
+          <article class="module-card">
+            <div class="module-card__header">
+              <span class="module-card__number">MÓDULO 01</span>
+              <span class="module-card__icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                  <line x1="19" y1="5" x2="5" y2="19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <circle cx="6.5" cy="6.5" r="2.5" stroke="currentColor" stroke-width="2"/>
+                  <circle cx="17.5" cy="17.5" r="2.5" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </span>
+            </div>
+            <h3 class="module-card__title">Quanto o iFood está comendo do seu lucro</h3>
+            <p class="module-card__desc">Entenda o impacto das taxas e extras e descubra quanto realmente sobra das suas vendas.</p>
+          </article>
+
+          <!-- MÓDULO 02 -->
+          <article class="module-card">
+            <div class="module-card__header">
+              <span class="module-card__number">MÓDULO 02</span>
+              <span class="module-card__icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                  <rect x="3" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="2"/>
+                  <rect x="14" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="2"/>
+                  <rect x="14" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="2"/>
+                  <rect x="3" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </span>
+            </div>
+            <h3 class="module-card__title">Seu sistema de vendas diretas</h3>
+            <p class="module-card__desc">Organize Instagram, cardápio, WhatsApp, atendimento, preços, ofertas e entrega.</p>
+          </article>
+
+          <!-- MÓDULO 03 -->
+          <article class="module-card">
+            <div class="module-card__header">
+              <span class="module-card__number">MÓDULO 03</span>
+              <span class="module-card__icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z" stroke="currentColor" stroke-width="2"/>
+                  <circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </span>
+            </div>
+            <h3 class="module-card__title">Anúncios locais que trazem clientes</h3>
+            <p class="module-card__desc">Aprenda a usar anúncios locais para alcançar pessoas da sua região com um orçamento pequeno.</p>
+          </article>
+
+          <!-- MÓDULO 04 -->
+          <article class="module-card">
+            <div class="module-card__header">
+              <span class="module-card__number">MÓDULO 04</span>
+              <span class="module-card__icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </div>
+            <h3 class="module-card__title">Transformando cliente em fã da sua marca</h3>
+            <p class="module-card__desc">Aprenda a criar relacionamento, estimular recompra, indicação e fidelização.</p>
+          </article>
+
+          <!-- MÓDULO 05 (COM DESTAQUE VISUAL PARA O PLANO DE 30 DIAS + BADGE "EXECUÇÃO") -->
+          <article class="module-card module-card--featured">
+            <div class="module-card__header">
+              <div class="module-card__featured-tag">
+                <span class="module-card__number">MÓDULO 05</span>
+                <span class="module-card__badge">EXECUÇÃO</span>
+              </div>
+              <span class="module-card__icon module-card__icon--red" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                  <rect x="3" y="4" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                  <line x1="16" y1="2" x2="16" y2="6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <line x1="8" y1="2" x2="8" y2="6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <line x1="3" y1="10" x2="21" y2="10" stroke="currentColor" stroke-width="2"/>
+                  <path d="M9 16l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </div>
+            <h3 class="module-card__title">Plano de ação de 30 dias</h3>
+            <p class="module-card__desc">Uma sequência prática para implementar a estrutura e colocar as estratégias em funcionamento.</p>
+          </article>
+
+          <!-- MOCKUP 3D DO E-BOOK DE APOIO VISUAL INTEGRADO NA SEÇÃO -->
+          <aside class="module-mockup-card" aria-label="Mockup do Guia Digital">
+            <div class="module-mockup-mini">
+              <div class="module-mockup-mini__book">
+                <div class="module-mockup-mini__spine" aria-hidden="true"></div>
+                <div class="module-mockup-mini__cover">
+                  <span class="module-mockup-mini__tag">GUIA PRÁTICO</span>
+                  <div class="module-mockup-mini__title">
+                    <span>VENDA TODO DIA</span>
+                    <span>SEM VIRAR</span>
+                    <span class="module-mockup-mini__red">REFÉM</span>
+                    <span class="module-mockup-mini__red-light">DO IFOOD</span>
+                  </div>
+                  <span class="module-mockup-mini__author">DANIEL JUNIOR</span>
+                </div>
+              </div>
+            </div>
+            <span class="module-mockup-card__label">GUIA DIGITAL COMPLETO</span>
+          </aside>
+
+        </div>
+
+        <!-- Frase de Fechamento -->
+        <div class="modules-closing">
+          <p class="modules-closing__text">
+            Você não precisa descobrir sozinho o que fazer primeiro, depois ou por último.
+          </p>
+          <p class="modules-closing__subtext">
+            Os <span class="modules-closing__highlight">30 dias</span> organizam a execução passo a passo.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SEÇÃO 05: OS 4 BÔNUS PRÁTICOS (FUNDO PRETO EDITORIAL)
+         ======================================================================= -->
+    <section id="bonus" class="bonus-section" aria-labelledby="bonus-title">
+      <div class="container bonus-container">
+
+        <!-- Indicador -->
+        <div class="bonus-kicker">
+          <span class="bonus-kicker__dot" aria-hidden="true"></span>
+          <span>E AINDA TEM MAIS</span>
+        </div>
+
+        <!-- Título -->
+        <h2 id="bonus-title" class="bonus-title">
+          Você também recebe <span class="bonus-title__highlight">ferramentas</span> para colocar tudo em prática.
+        </h2>
+
+        <!-- Subtítulo -->
+        <p class="bonus-subtitle">
+          Além dos 5 módulos, você recebe materiais práticos para organizar sua estrutura, atender melhor e acompanhar seus resultados.
+        </p>
+
+        <!-- Grid 2x2 com os 4 Bônus -->
+        <div class="bonus-grid">
+
+          <!-- BÔNUS 01 -->
+          <article class="bonus-card">
+            <div class="bonus-card__top">
+              <div class="bonus-card__tags">
+                <span class="bonus-card__number">BÔNUS 01</span>
+                <span class="bonus-card__included">INCLUÍDO</span>
+              </div>
+              <span class="bonus-card__icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M9 11l3 3L22 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </div>
+            <h3 class="bonus-card__title">Checklist de configuração</h3>
+            <p class="bonus-card__desc">Confira tudo o que precisa estar configurado antes de começar a vender diretamente.</p>
+          </article>
+
+          <!-- BÔNUS 02 -->
+          <article class="bonus-card">
+            <div class="bonus-card__top">
+              <div class="bonus-card__tags">
+                <span class="bonus-card__number">BÔNUS 02</span>
+                <span class="bonus-card__included">INCLUÍDO</span>
+              </div>
+              <span class="bonus-card__icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <rect x="5" y="2" width="14" height="20" rx="3" stroke="currentColor" stroke-width="2"/>
+                  <circle cx="12" cy="18" r="1" fill="currentColor"/>
+                  <path d="M9 6h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </span>
+            </div>
+            <h3 class="bonus-card__title">15 templates de Stories</h3>
+            <p class="bonus-card__desc">Modelos prontos para apresentar seus produtos, ofertas e chamadas para pedido.</p>
+          </article>
+
+          <!-- BÔNUS 03 -->
+          <article class="bonus-card">
+            <div class="bonus-card__top">
+              <div class="bonus-card__tags">
+                <span class="bonus-card__number">BÔNUS 03</span>
+                <span class="bonus-card__included">INCLUÍDO</span>
+              </div>
+              <span class="bonus-card__icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </div>
+            <h3 class="bonus-card__title">Scripts de atendimento no WhatsApp</h3>
+            <p class="bonus-card__desc">Mensagens prontas para conduzir o atendimento desde o primeiro contato até o pós-venda.</p>
+          </article>
+
+          <!-- BÔNUS 04 -->
+          <article class="bonus-card">
+            <div class="bonus-card__top">
+              <div class="bonus-card__tags">
+                <span class="bonus-card__number">BÔNUS 04</span>
+                <span class="bonus-card__included">INCLUÍDO</span>
+              </div>
+              <span class="bonus-card__icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <rect x="4" y="2" width="16" height="20" rx="2" stroke="currentColor" stroke-width="2"/>
+                  <rect x="7" y="5" width="10" height="3" rx="0.5" stroke="currentColor" stroke-width="1.8"/>
+                  <circle cx="8" cy="12" r="1" fill="currentColor"/>
+                  <circle cx="12" cy="12" r="1" fill="currentColor"/>
+                  <circle cx="16" cy="12" r="1" fill="currentColor"/>
+                  <circle cx="8" cy="16" r="1" fill="currentColor"/>
+                  <circle cx="12" cy="16" r="1" fill="currentColor"/>
+                  <circle cx="16" cy="16" r="1" fill="currentColor"/>
+                </svg>
+              </span>
+            </div>
+            <h3 class="bonus-card__title">Calculadora de lucro</h3>
+            <p class="bonus-card__desc">Uma ferramenta para visualizar melhor custos, taxas e quanto realmente sobra em cada venda.</p>
+          </article>
+
+        </div>
+
+        <!-- Frase de Fechamento -->
+        <p class="bonus-closing">
+          Você recebe o conteúdo para <span class="bonus-closing__highlight">aprender</span> e as ferramentas para <span class="bonus-closing__highlight">executar</span>.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         ESTRUTURA PREPARADA PARA AS PRÓXIMAS SEÇÕES DA LANDING PAGE
+         (As demais seções serão adicionadas abaixo mantendo os tokens e grid)
+         ======================================================================= -->
+  </main>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
