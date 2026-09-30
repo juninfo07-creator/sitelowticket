@@ -1637,3 +1637,413 @@ a {
     font-size: 0.96rem;
   }
 }
+
+/* ==========================================================================
+   SEÇÃO 06: A OFERTA (PREÇO R$ 97 + GUIA DIGITAL COMPLETO)
+   Fundo Branco (#FFFFFF) com Grid Discreto, Card Editorial Centralizado
+   ========================================================================== */
+
+.oferta-section {
+  position: relative;
+  min-height: 750px;
+  display: flex;
+  align-items: center;
+  padding-block: clamp(4.5rem, 6.5vw, 6.25rem);
+  background-color: #FFFFFF;
+  color: #080808;
+  border-bottom: 1px solid rgba(8, 8, 8, 0.08);
+  background-image:
+    linear-gradient(to right, rgba(8, 8, 8, 0.025) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(8, 8, 8, 0.025) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+.oferta-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Indicador "■ COMECE AGORA" */
+.oferta-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-red);
+  margin-bottom: 1rem;
+}
+
+.oferta-kicker__dot {
+  width: 7px;
+  height: 7px;
+  background-color: var(--color-red);
+  display: inline-block;
+}
+
+/* Título */
+.oferta-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3.4vw, 2.75rem);
+  font-weight: 900;
+  line-height: 1.15;
+  color: #080808;
+  letter-spacing: -0.025em;
+  max-width: 820px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.oferta-title__highlight {
+  color: var(--color-red);
+}
+
+/* Subtítulo */
+.oferta-subtitle {
+  font-family: var(--font-sans);
+  font-size: clamp(1rem, 1.15vw, 1.125rem);
+  color: #4B5563;
+  line-height: 1.55;
+  max-width: 700px;
+  margin-inline: auto;
+  margin-bottom: clamp(2.5rem, 4vw, 3.25rem);
+  text-align: center;
+}
+
+/* Grande Card Central de Oferta */
+.oferta-card {
+  background-color: #FFFFFF;
+  border: 1px solid rgba(8, 8, 8, 0.12);
+  border-radius: 12px;
+  max-width: 800px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  box-shadow: 0 16px 40px -12px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(0, 0, 0, 0.03);
+  overflow: hidden;
+  margin-inline: auto;
+  margin-bottom: 2.25rem;
+  text-align: left;
+}
+
+/* Coluna Esquerda: Mockup 3D */
+.oferta-card__left {
+  background: linear-gradient(180deg, #F9FAFB 0%, #EEF2F6 100%);
+  border-right: 1px solid rgba(8, 8, 8, 0.08);
+  padding: 2.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  text-align: center;
+}
+
+.oferta-mockup-wrapper {
+  perspective: 650px;
+  padding: 0.5rem;
+}
+
+.oferta-mockup-mini {
+  perspective: 650px;
+}
+
+.oferta-mockup-mini__book {
+  position: relative;
+  width: 124px;
+  height: 174px;
+  transform-style: preserve-3d;
+  transform: rotateY(-18deg) rotateX(4deg);
+  box-shadow: -10px 16px 30px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.oferta-card:hover .oferta-mockup-mini__book {
+  transform: rotateY(-8deg) rotateX(2deg) translateY(-3px);
+}
+
+.oferta-mockup-mini__spine {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 100%;
+  background: linear-gradient(90deg, #7A0A10 0%, #E51926 60%, #4A060A 100%);
+  transform-origin: left center;
+  transform: rotateY(-90deg);
+}
+
+.oferta-mockup-mini__cover {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(155deg, #16161D 0%, #070709 70%, #0D0506 100%);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-left: 3px solid var(--color-red);
+  padding: 0.75rem 0.65rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.oferta-mockup-mini__tag {
+  font-family: var(--font-display);
+  font-size: 0.46rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: var(--color-red);
+}
+
+.oferta-mockup-mini__title {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 0.72rem;
+  line-height: 1.05;
+  color: #FFFFFF;
+}
+
+.oferta-mockup-mini__red {
+  color: #FFFFFF;
+  background-color: var(--color-red);
+  padding: 0.05rem 0.18rem;
+  width: fit-content;
+  margin-block: 0.08rem;
+}
+
+.oferta-mockup-mini__red-light {
+  color: var(--color-red);
+}
+
+.oferta-mockup-mini__author {
+  font-family: var(--font-sans);
+  font-size: 0.5rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.oferta-mockup-label {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #4B5563;
+}
+
+/* Coluna Direita: Conteúdo, Preço e CTA */
+.oferta-card__right {
+  padding: 2.25rem 2.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.35rem;
+}
+
+.oferta-deliverables__heading {
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-red);
+  margin-bottom: 0.85rem;
+}
+
+.oferta-deliverables__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.oferta-deliverables__item {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1F2937;
+  line-height: 1.35;
+}
+
+.oferta-check {
+  color: var(--color-red);
+  font-weight: 800;
+  font-size: 1rem;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Bloco de Preço */
+.oferta-price-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(8, 8, 8, 0.08);
+}
+
+.oferta-price-block__label {
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #6B7280;
+}
+
+.oferta-price-block__value {
+  display: flex;
+  align-items: baseline;
+  gap: 0.35rem;
+  line-height: 1;
+}
+
+.oferta-price-block__currency {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #080808;
+}
+
+.oferta-price-block__amount {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 5vw, 3.6rem);
+  font-weight: 900;
+  line-height: 0.95;
+  color: #080808;
+  letter-spacing: -0.04em;
+}
+
+/* Botão de Ação CTA */
+.oferta-cta-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  width: 100%;
+  padding: 1.05rem 1.5rem;
+  background-color: var(--color-red);
+  color: #FFFFFF;
+  font-family: var(--font-display);
+  font-size: 1.02rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border-radius: 6px;
+  box-shadow: 0 4px 16px rgba(229, 25, 38, 0.28);
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  margin-top: 0.25rem;
+}
+
+.oferta-cta-button:hover {
+  background-color: #CC121E;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(229, 25, 38, 0.4);
+  color: #FFFFFF;
+}
+
+.oferta-cta-button__arrow {
+  font-size: 1.15rem;
+  transition: transform 0.2s ease;
+}
+
+.oferta-cta-button:hover .oferta-cta-button__arrow {
+  transform: translateX(4px);
+}
+
+/* Microinformação */
+.oferta-microinfo {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #6B7280;
+  text-align: center;
+  margin: 0;
+}
+
+/* Frase de Apoio */
+.oferta-closing {
+  font-family: var(--font-sans);
+  font-size: clamp(1rem, 1.1vw, 1.125rem);
+  font-weight: 500;
+  color: #374151;
+  line-height: 1.5;
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.oferta-closing__highlight {
+  color: var(--color-red);
+  font-weight: 800;
+}
+
+/* ==========================================================================
+   RESPONSIVIDADE MOBILE — SEÇÃO 06
+   ========================================================================== */
+
+@media (max-width: 768px) {
+  .oferta-section {
+    min-height: auto;
+    padding-block: 3.5rem;
+  }
+
+  .oferta-title {
+    font-size: clamp(1.85rem, 6.8vw, 2.25rem);
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .oferta-subtitle {
+    font-size: 0.96rem;
+    margin-bottom: 2rem;
+  }
+
+  .oferta-card {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    margin-inline: 0;
+    margin-bottom: 1.75rem;
+  }
+
+  .oferta-card__left {
+    border-right: none;
+    border-bottom: 1px solid rgba(8, 8, 8, 0.08);
+    padding: 2rem 1.25rem;
+  }
+
+  .oferta-card__right {
+    padding: 1.75rem 1.25rem 2rem;
+    gap: 1.25rem;
+  }
+
+  .oferta-deliverables__item {
+    font-size: 0.92rem;
+  }
+
+  .oferta-cta-button {
+    font-size: 0.95rem;
+    padding: 0.95rem 1rem;
+  }
+
+  .oferta-closing {
+    font-size: 0.95rem;
+    padding-inline: 0.5rem;
+  }
+}
+
