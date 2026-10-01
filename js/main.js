@@ -4,5 +4,18 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Estrutura enxuta pronta para receber comportamentos das próximas seções
+  // Comportamento de acordeão para o FAQ (fechar os demais ao abrir um)
+  const faqCards = document.querySelectorAll('.faq-card');
+  faqCards.forEach(card => {
+    card.addEventListener('toggle', () => {
+      if (card.open) {
+        faqCards.forEach(otherCard => {
+          if (otherCard !== card && otherCard.open) {
+            otherCard.open = false;
+          }
+        });
+      }
+    });
+  });
 });
+
