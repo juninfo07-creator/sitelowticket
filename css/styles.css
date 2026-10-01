@@ -2580,5 +2580,206 @@ a {
   }
 }
 
+/* ==========================================================================
+   SEÇÃO DE GARANTIA: COMPRA SEM RISCO (7 DIAS)
+   Fundo Claro (#FAFAFA), Card Centralizado Branco, Compacta e Segura
+   ========================================================================== */
+
+.garantia-section {
+  position: relative;
+  min-height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: clamp(3.75rem, 5vw, 4.75rem);
+  background-color: #FAFAFA;
+  color: #080808;
+  border-bottom: 1px solid rgba(8, 8, 8, 0.08);
+  background-image:
+    linear-gradient(to right, rgba(8, 8, 8, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(8, 8, 8, 0.02) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+.garantia-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+/* Card Central de Garantia */
+.garantia-card {
+  background-color: #FFFFFF;
+  border: 1px solid rgba(8, 8, 8, 0.1);
+  border-radius: 12px;
+  padding: clamp(2rem, 3.5vw, 2.75rem) clamp(1.5rem, 3.5vw, 2.75rem);
+  max-width: 680px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.05), 0 2px 6px rgba(0, 0, 0, 0.02);
+}
+
+/* Indicador "■ COMPRA SEM RISCO" */
+.garantia-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-red);
+  margin-bottom: 1rem;
+}
+
+.garantia-kicker__dot {
+  width: 7px;
+  height: 7px;
+  background-color: var(--color-red);
+  display: inline-block;
+}
+
+/* Ícone de Escudo Minimalista */
+.garantia-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: rgba(229, 25, 38, 0.08);
+  color: var(--color-red);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.15rem;
+}
+
+/* Título */
+.garantia-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.65rem, 2.7vw, 2.2rem);
+  font-weight: 900;
+  line-height: 1.2;
+  color: #080808;
+  letter-spacing: -0.025em;
+  max-width: 600px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.garantia-title__highlight {
+  color: var(--color-red);
+}
+
+/* Texto */
+.garantia-text {
+  font-family: var(--font-sans);
+  font-size: clamp(0.95rem, 1.05vw, 1.02rem);
+  color: #4B5563;
+  line-height: 1.6;
+  max-width: 580px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.garantia-text p {
+  margin: 0;
+}
+
+/* Bloco Destaque da Garantia */
+.garantia-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #F9FAFB;
+  border: 1px solid rgba(8, 8, 8, 0.09);
+  border-radius: 8px;
+  padding: 0.75rem 1.6rem;
+  min-width: 130px;
+  margin-bottom: 0.75rem;
+}
+
+.garantia-badge__days {
+  display: flex;
+  align-items: baseline;
+  gap: 0.3rem;
+  line-height: 1;
+}
+
+.garantia-badge__num {
+  font-family: var(--font-display);
+  font-size: 2.15rem;
+  font-weight: 900;
+  color: var(--color-red);
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.garantia-badge__unit {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: #080808;
+  letter-spacing: 0.06em;
+}
+
+.garantia-badge__label {
+  font-family: var(--font-display);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #6B7280;
+  margin-top: 0.2rem;
+}
+
+/* Microcopy */
+.garantia-microcopy {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #6B7280;
+  text-align: center;
+  margin: 0;
+}
+
+/* ==========================================================================
+   RESPONSIVIDADE MOBILE — GARANTIA
+   ========================================================================== */
+
+@media (max-width: 768px) {
+  .garantia-section {
+    min-height: auto;
+    padding-block: 3rem;
+  }
+
+  .garantia-card {
+    padding: 1.75rem 1.25rem;
+    margin-inline: 0;
+  }
+
+  .garantia-title {
+    font-size: clamp(1.45rem, 6vw, 1.8rem);
+    line-height: 1.25;
+  }
+
+  .garantia-text {
+    font-size: 0.92rem;
+  }
+
+  .garantia-badge {
+    padding: 0.65rem 1.25rem;
+  }
+}
+
+
 
 
