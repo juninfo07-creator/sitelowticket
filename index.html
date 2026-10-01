@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=JetBrains+Mono:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
   <!-- Stylesheet Principal -->
-  <link rel="stylesheet" href="css/styles.css?v=16" />
+  <link rel="stylesheet" href="css/styles.css?v=17" />
 </head>
 <body>
 
@@ -821,9 +821,64 @@
     </section>
 
     <!-- =======================================================================
-         ESTRUTURA PREPARADA PARA AS PRÓXIMAS SEÇÕES DA LANDING PAGE
-         (As demais seções serão adicionadas abaixo mantendo os tokens e grid)
+         SEÇÃO 08: CTA FINAL (SEÇÃO FINAL DA LANDING PAGE)
+         Fundo: Preto (#080808) com grid sutil
+         Headline -> Texto -> Oferta -> R$ 97 -> CTA -> Microcopy -> Frase Final
          ======================================================================= -->
+    <section id="cta-final" class="cta-final-section" aria-labelledby="cta-final-title">
+      <div class="container cta-final-container">
+
+        <!-- Indicador -->
+        <div class="cta-final-kicker">
+          <span class="cta-final-kicker__dot" aria-hidden="true">■</span>
+          <span>SEU PRÓXIMO PASSO</span>
+        </div>
+
+        <!-- Headline -->
+        <h2 id="cta-final-title" class="cta-final-title">
+          Pare de depender de terceiros para conseguir <span class="cta-final-title__highlight">cada venda</span>.
+        </h2>
+
+        <!-- Texto -->
+        <p class="cta-final-subtitle">
+          Comece a construir hoje uma estrutura própria para atrair clientes, vender pelo WhatsApp e fazer eles voltarem.
+        </p>
+
+        <!-- Área Central de Oferta -->
+        <div class="cta-final-box">
+
+          <!-- Rótulo do Pacote -->
+          <div class="cta-final-bundle">
+            GUIA DIGITAL + 5 MÓDULOS + 30 DIAS + 4 BÔNUS
+          </div>
+
+          <!-- Preço -->
+          <div class="cta-final-pricing">
+            <span class="cta-final-pricing__label">ACESSO COMPLETO</span>
+            <div class="cta-final-pricing__value">
+              <span class="cta-final-pricing__currency">R$</span>
+              <span class="cta-final-pricing__amount">97</span>
+            </div>
+          </div>
+
+          <!-- CTA -->
+          <a href="#checkout" class="cta-final-button">
+            <span>QUERO COMEÇAR AGORA</span>
+            <span class="cta-final-button__arrow" aria-hidden="true">→</span>
+          </a>
+
+          <!-- Microcopy -->
+          <p class="cta-final-microcopy">Acesso imediato • Pagamento único</p>
+
+        </div>
+
+        <!-- Frase Final -->
+        <p class="cta-final-closing">
+          Seu próximo cliente pode continuar vindo de um marketplace. Ou você pode <span class="cta-final-closing__highlight">construir um canal próprio</span>.
+        </p>
+
+      </div>
+    </section>
   </main>
 
   <script src="js/main.js" defer></script>
