@@ -2049,7 +2049,7 @@ a {
 
 /* ==========================================================================
    SEÇÃO 07: FAQ (PERGUNTAS FREQUENTES — ELIMINAÇÃO DE DÚVIDAS)
-   Fundo Preto (#080808), Grid Sutil, Acordeão Centralizado (850px)
+   Fundo Branco (#FFFFFF), Grid Sutil, Acordeão Centralizado (850px)
    ========================================================================== */
 
 .faq-section {
@@ -2058,12 +2058,12 @@ a {
   display: flex;
   align-items: center;
   padding-block: clamp(4.5rem, 6.5vw, 6.25rem);
-  background-color: #080808;
-  color: #FFFFFF;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background-color: #FFFFFF;
+  color: #080808;
+  border-bottom: 1px solid rgba(8, 8, 8, 0.08);
   background-image:
-    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    linear-gradient(to right, rgba(8, 8, 8, 0.025) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(8, 8, 8, 0.025) 1px, transparent 1px);
   background-size: 64px 64px;
 }
 
@@ -2101,7 +2101,7 @@ a {
   font-size: clamp(2rem, 3.4vw, 2.75rem);
   font-weight: 900;
   line-height: 1.15;
-  color: #FFFFFF;
+  color: #080808;
   letter-spacing: -0.025em;
   max-width: 820px;
   margin-bottom: 1rem;
@@ -2116,7 +2116,7 @@ a {
 .faq-subtitle {
   font-family: var(--font-sans);
   font-size: clamp(1rem, 1.15vw, 1.125rem);
-  color: #9CA3AF;
+  color: #4B5563;
   line-height: 1.55;
   max-width: 600px;
   margin-inline: auto;
@@ -2138,20 +2138,23 @@ a {
 
 /* Card Individual de FAQ */
 .faq-card {
-  background-color: #111116;
-  border: 1px solid rgba(255, 255, 255, 0.09);
+  background-color: #FFFFFF;
+  border: 1px solid rgba(8, 8, 8, 0.1);
   border-radius: 8px;
   overflow: hidden;
-  transition: border-color 0.25s ease, background-color 0.25s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+  transition: border-color 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
 }
 
 .faq-card:hover {
-  border-color: rgba(255, 255, 255, 0.18);
+  border-color: rgba(8, 8, 8, 0.2);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
 }
 
 .faq-card[open] {
   border-color: rgba(229, 25, 38, 0.35);
-  background-color: #13131A;
+  background-color: #FAFAFC;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
 }
 
 /* Header / Pergunta clicável */
@@ -2194,7 +2197,7 @@ a {
   font-family: var(--font-display);
   font-size: clamp(1rem, 1.1vw, 1.1rem);
   font-weight: 800;
-  color: #FFFFFF;
+  color: #080808;
   line-height: 1.35;
 }
 
@@ -2203,7 +2206,7 @@ a {
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  background-color: rgba(229, 25, 38, 0.1);
+  background-color: rgba(229, 25, 38, 0.08);
   color: var(--color-red);
   font-family: var(--font-sans);
   font-size: 1.25rem;
@@ -2217,12 +2220,12 @@ a {
 }
 
 .faq-card:hover .faq-card__icon {
-  background-color: rgba(229, 25, 38, 0.2);
+  background-color: rgba(229, 25, 38, 0.16);
 }
 
 .faq-card[open] .faq-card__icon {
   transform: rotate(45deg);
-  background-color: rgba(229, 25, 38, 0.25);
+  background-color: rgba(229, 25, 38, 0.22);
 }
 
 /* Resposta */
@@ -2235,8 +2238,8 @@ a {
   font-family: var(--font-sans);
   font-size: 0.96rem;
   line-height: 1.6;
-  color: #9CA3AF;
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  color: #4B5563;
+  border-top: 1px solid rgba(8, 8, 8, 0.07);
   padding-top: 0.95rem;
   margin: 0;
 }
@@ -2257,7 +2260,7 @@ a {
   font-family: var(--font-sans);
   font-size: clamp(1rem, 1.05vw + 0.2rem, 1.125rem);
   font-weight: 500;
-  color: var(--color-gray-200);
+  color: #374151;
   line-height: 1.55;
   text-align: center;
   max-width: 680px;
@@ -2582,7 +2585,7 @@ a {
 
 /* ==========================================================================
    SEÇÃO DE GARANTIA: COMPRA SEM RISCO (7 DIAS)
-   Fundo Claro (#FAFAFA), Card Centralizado Branco, Compacta e Segura
+   Fundo Escuro (#080808), Card Centralizado Escuro (#111116)
    ========================================================================== */
 
 .garantia-section {
@@ -2592,12 +2595,12 @@ a {
   align-items: center;
   justify-content: center;
   padding-block: clamp(3.75rem, 5vw, 4.75rem);
-  background-color: #FAFAFA;
-  color: #080808;
-  border-bottom: 1px solid rgba(8, 8, 8, 0.08);
+  background-color: #080808;
+  color: #FFFFFF;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   background-image:
-    linear-gradient(to right, rgba(8, 8, 8, 0.02) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(8, 8, 8, 0.02) 1px, transparent 1px);
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
   background-size: 64px 64px;
 }
 
@@ -2611,8 +2614,8 @@ a {
 
 /* Card Central de Garantia */
 .garantia-card {
-  background-color: #FFFFFF;
-  border: 1px solid rgba(8, 8, 8, 0.1);
+  background-color: #111116;
+  border: 1px solid rgba(255, 255, 255, 0.09);
   border-radius: 12px;
   padding: clamp(2rem, 3.5vw, 2.75rem) clamp(1.5rem, 3.5vw, 2.75rem);
   max-width: 680px;
@@ -2621,7 +2624,7 @@ a {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.05), 0 2px 6px rgba(0, 0, 0, 0.02);
+  box-shadow: 0 16px 40px -12px rgba(0, 0, 0, 0.6);
 }
 
 /* Indicador "■ COMPRA SEM RISCO" */
@@ -2645,26 +2648,13 @@ a {
   display: inline-block;
 }
 
-/* Ícone de Escudo Minimalista */
-.garantia-icon {
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  background-color: rgba(229, 25, 38, 0.08);
-  color: var(--color-red);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1.15rem;
-}
-
 /* Título */
 .garantia-title {
   font-family: var(--font-display);
   font-size: clamp(1.65rem, 2.7vw, 2.2rem);
   font-weight: 900;
   line-height: 1.2;
-  color: #080808;
+  color: #FFFFFF;
   letter-spacing: -0.025em;
   max-width: 600px;
   margin-bottom: 1rem;
@@ -2679,7 +2669,7 @@ a {
 .garantia-text {
   font-family: var(--font-sans);
   font-size: clamp(0.95rem, 1.05vw, 1.02rem);
-  color: #4B5563;
+  color: #9CA3AF;
   line-height: 1.6;
   max-width: 580px;
   display: flex;
@@ -2705,7 +2695,7 @@ a {
   width: 108px;
   height: 108px;
   object-fit: contain;
-  filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.12));
+  filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.6)) drop-shadow(0 0 16px rgba(212, 175, 55, 0.18));
   transition: transform 0.3s ease;
 }
 
@@ -2718,7 +2708,7 @@ a {
   font-family: var(--font-sans);
   font-size: 0.8rem;
   font-weight: 500;
-  color: #6B7280;
+  color: #9CA3AF;
   text-align: center;
   margin: 0;
 }
@@ -2752,6 +2742,7 @@ a {
     height: 96px;
   }
 }
+
 
 
 
