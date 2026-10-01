@@ -2693,52 +2693,24 @@ a {
   margin: 0;
 }
 
-/* Bloco Destaque da Garantia */
-.garantia-badge {
+/* Selo Oficial de Garantia 7 Dias */
+.garantia-seal {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #F9FAFB;
-  border: 1px solid rgba(8, 8, 8, 0.09);
-  border-radius: 8px;
-  padding: 0.75rem 1.6rem;
-  min-width: 130px;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1.15rem;
 }
 
-.garantia-badge__days {
-  display: flex;
-  align-items: baseline;
-  gap: 0.3rem;
-  line-height: 1;
+.garantia-seal__img {
+  width: 108px;
+  height: 108px;
+  object-fit: contain;
+  filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.12));
+  transition: transform 0.3s ease;
 }
 
-.garantia-badge__num {
-  font-family: var(--font-display);
-  font-size: 2.15rem;
-  font-weight: 900;
-  color: var(--color-red);
-  line-height: 1;
-  letter-spacing: -0.03em;
-}
-
-.garantia-badge__unit {
-  font-family: var(--font-display);
-  font-size: 0.85rem;
-  font-weight: 800;
-  color: #080808;
-  letter-spacing: 0.06em;
-}
-
-.garantia-badge__label {
-  font-family: var(--font-display);
-  font-size: 0.68rem;
-  font-weight: 800;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: #6B7280;
-  margin-top: 0.2rem;
+.garantia-card:hover .garantia-seal__img {
+  transform: scale(1.04);
 }
 
 /* Microcopy */
@@ -2775,10 +2747,12 @@ a {
     font-size: 0.92rem;
   }
 
-  .garantia-badge {
-    padding: 0.65rem 1.25rem;
+  .garantia-seal__img {
+    width: 96px;
+    height: 96px;
   }
 }
+
 
 
 
