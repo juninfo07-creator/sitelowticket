@@ -2036,6 +2036,15 @@ a {
     font-size: 0.92rem;
   }
 
+  .oferta-price-block {
+    align-items: center;
+    text-align: center;
+  }
+
+  .oferta-price-block__value {
+    justify-content: center;
+  }
+
   .oferta-cta-button {
     font-size: 0.95rem;
     padding: 0.95rem 1rem;
