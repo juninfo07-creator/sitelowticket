@@ -17,5 +17,15 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  // Meta Pixel: InitiateCheckout ao clicar nos botões que levam ao checkout da Kiwify
+  const checkoutLinks = document.querySelectorAll('a[href*="pay.kiwify.com.br"]');
+  checkoutLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      if (typeof fbq === 'function') {
+        fbq('track', 'InitiateCheckout', { value: 97, currency: 'BRL' });
+      }
+    });
+  });
 });
 
